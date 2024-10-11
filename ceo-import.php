@@ -68,7 +68,7 @@ function ceo_import_add_comic_and_post($comic_to_add, $date_to_add, $title_to_ad
     $post_id = wp_insert_post($post_args);
     if (!is_wp_error($post_id)) {
         // Attach the Comic Now
-        $file_url = (is_multisite) ? esc_url(network_home_url().'/'.$import_directory.'/'.$comic_to_add) : esc_url(home_url().'/'.$import_directory.'/'.$comic_to_add);
+        $file_url = (is_multisite()) ? esc_url(network_home_url().'/'.$import_directory.'/'.$comic_to_add) : esc_url(home_url().'/'.$import_directory.'/'.$comic_to_add);
         $comic = new WP_Http();
         $comic = $comic->request($file_url);
         if (!is_wp_error($comic)) {
@@ -293,5 +293,10 @@ if (count($results = glob(ABSPATH.$import_directory.'/*.*')) > 0) {
         echo '<span style="width:320px;display:inline-block;float:left;">'.basename($filename).'</span>';
     }
 } else {
+<<<<<<< HEAD
     echo __('No files found in', 'comiceasel').'&nbsp;'.ABSPATH.$import_directory;
 }
+=======
+	echo __('No files found in','comiceasel').'&nbsp;'.ABSPATH.$import_directory;
+}
+>>>>>>> 0b69c88 (Update ceo-import.php)
