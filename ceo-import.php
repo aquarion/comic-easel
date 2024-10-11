@@ -348,6 +348,7 @@ if (count($results = glob(ABSPATH.$import_directory.'/*.*')) > 0) {
 =======
 	echo __('No files found in','comiceasel').'&nbsp;'.ABSPATH.$import_directory;
 }
+<<<<<<< HEAD
 >>>>>>> 0b69c88 (Update ceo-import.php)
 =======
     </thead>
@@ -390,3 +391,5 @@ if (count($results = glob(ABSPATH.$import_directory.'/*.*')) > 0) {
     }
     >>>>>>> 6370396 (Refactor code for php linting)
 >>>>>>> 58d99ab (Refactor code for php linting)
+=======
+>>>>>>> upstream-master
