@@ -138,7 +138,11 @@ function ceo_import_by_namedate($import_directory, $import_date_format, $import_
 
 
 
+<<<<<<< HEAD
 // Catch the return $_POST and do something with them.
+=======
+    // Catch the return $_POST and do something with them.
+>>>>>>> 58d99ab (Refactor code for php linting)
 if (isset($_POST['_wpnonce']) && wp_verify_nonce($_POST['_wpnonce'], 'comiceasel-import') ) {
     switch ($import_type) {
     case 'namedate':
@@ -151,6 +155,7 @@ if (isset($_POST['_wpnonce']) && wp_verify_nonce($_POST['_wpnonce'], 'comiceasel
 }
 
 ?>
+<<<<<<< HEAD
 <div class="wrap">
 <h2><?php _e('Comic Easel - Import', 'comiceasel'); ?></h2>
 <form method="post" id="myForm-import" name="template">
@@ -161,6 +166,18 @@ if (isset($_POST['_wpnonce']) && wp_verify_nonce($_POST['_wpnonce'], 'comiceasel
     <th colspan="10"><?php _e('Options', 'comiceasel'); ?></th>
     </tr>
 <?php 
+=======
+    <div class="wrap">
+    <h2><?php _e('Comic Easel - Import', 'comiceasel'); ?></h2>
+    <form method="post" id="myForm-import" name="template">
+    <?php wp_nonce_field('comiceasel-import') ?>
+    <table class="widefat">
+    <thead>
+    <tr>
+    <th colspan="10"><?php _e('Options', 'comiceasel'); ?></th>
+    </tr>
+    <?php 
+>>>>>>> 58d99ab (Refactor code for php linting)
     /*
     <tr>
         <td valign="top" align="right" style="width:20px">
@@ -171,7 +188,11 @@ if (isset($_POST['_wpnonce']) && wp_verify_nonce($_POST['_wpnonce'], 'comiceasel
         </td>
     </tr>
     */
+<<<<<<< HEAD
 ?>
+=======
+    ?>
+>>>>>>> 58d99ab (Refactor code for php linting)
     <tr>
         <td valign="top" align="right">
             <input name="import-type" class="import-type" type="radio" value="namedate" <?php checked($import_type, true); ?> />
@@ -200,8 +221,13 @@ if (isset($_POST['_wpnonce']) && wp_verify_nonce($_POST['_wpnonce'], 'comiceasel
         <?php echo '<center><strong>'.__('WARNING: When uploading your comics to the import directory, make sure there is only 1 comic per day, multiple comics per day will have issues.', 'comiceasel').'</strong></center>';  ?>
         </td>
     </tr>
+<<<<<<< HEAD
 <?php 
 /*
+=======
+    <?php 
+    /*
+>>>>>>> 58d99ab (Refactor code for php linting)
     <tr>
         <td valign="top" align="right">
             <input name="import-type" class="import-type" type="radio" value="numbered" disabled="disabled" />
@@ -221,10 +247,17 @@ if (isset($_POST['_wpnonce']) && wp_verify_nonce($_POST['_wpnonce'], 'comiceasel
             <input name="import-backdate-how" class="import-backdate-how-mwf" type="radio" value="mwf" disabled="disabled" /> MWF
         </td>
     </tr>
+<<<<<<< HEAD
 */
 ?>
 <?php 
 /*
+=======
+    */
+    ?>
+    <?php 
+    /*
+>>>>>>> 58d99ab (Refactor code for php linting)
     <tr>
         <td align="right">
             <input name="import-create-post" class="import-create-post" type="checkbox" value="1" <?php checked($import_create_post, true); ?> />
@@ -236,14 +269,24 @@ if (isset($_POST['_wpnonce']) && wp_verify_nonce($_POST['_wpnonce'], 'comiceasel
             <?php _e('Having this NOT checked (default) will make it so that if there is already a comic for that date it will not add another one.', 'comiceasel'); ?>
         </td>
     </tr>
+<<<<<<< HEAD
 */
 ?>
+=======
+    */
+    ?>
+>>>>>>> 58d99ab (Refactor code for php linting)
     <tr>
         <td align="right">
         </td>
         <td align="left">
+<<<<<<< HEAD
 <?php 
 $args = array(
+=======
+    <?php 
+    $args = array(
+>>>>>>> 58d99ab (Refactor code for php linting)
         'name'            => 'import-chapter',
         'orderby'        => 'name',
         'order'            => 'term_group',
@@ -253,14 +296,20 @@ $args = array(
         'pad_counts'    => 1,
         'taxonomy'        => 'chapters',
         'class'            => 'chapter-list' );
+<<<<<<< HEAD
 wp_dropdown_categories($args); 
 ?>
+=======
+    wp_dropdown_categories($args); 
+    ?>
+>>>>>>> 58d99ab (Refactor code for php linting)
 
         </td>
         <td align="left" colspan="11">
             <?php _e('Select a chapter the comics will go in.  If there are multiple chapters, then modify the comics in the import directory and only add the ones you want for the chapter selected.  You need to create the chapter first in the comics - chapters area.', 'comiceasel'); ?>
         </td>
     </tr>
+<<<<<<< HEAD
 </thead>
 </table>
 <p class="submit" style="margin-left: 10px;">
@@ -300,3 +349,44 @@ if (count($results = glob(ABSPATH.$import_directory.'/*.*')) > 0) {
 	echo __('No files found in','comiceasel').'&nbsp;'.ABSPATH.$import_directory;
 }
 >>>>>>> 0b69c88 (Update ceo-import.php)
+=======
+    </thead>
+    </table>
+    <p class="submit" style="margin-left: 10px;">
+    <input type="submit" class="button-primary" value="<?php _e('Import', 'comiceasel') ?>" />
+    <input type="hidden" name="action" value="ceo-import" />
+    </p>
+    <p>
+    <?php 
+    echo '<h3>'.__('DIRECTIONS:', 'comiceasel').'</h3>';
+    echo '<ol>';
+    echo '<li>'.__('FTP into your site and create a directory named', 'comiceasel').' <strong>"'.$import_directory.'"</strong> '.__('off of the root installation folder of your site.', 'comiceasel').'</li>';
+    echo '<li>'.__('Upload into that directory the comics using the ComicPress filename convention for each individual chapter you are importing.', 'comiceasel').'</li>';
+    echo '<li>'.__('Make sure the chapter the comics are going into is created in the comic - chapters section of the wp-admin.', 'comiceasel').'</li>';
+    echo '<li>'.__('Select chapter in the import section, modify any other values as needed, if you do not know what they are, do not modify them.', 'comiceasel').'</li>';
+    echo '<li>'.__('Press the Import button and wish for the best.', 'comiceasel').'</li>';
+    echo '</ol>'
+    ?>
+    </p>
+    <cite>*1</cite> - <?php _e('eg, ComicPress style filenames, if Date Format is: Y-m-d and Date Mask is {DATE}*.* the filename would be (as example if image is a .jpg):', 'comiceasel'); ?> <strong><?php _e('2012-01-01-title-of-comic.jpg', 'comiceasel'); ?></strong><br />
+    <cite>*2</cite> - <?php _e('ComicPress file convention requires that each comic is its own date., do not have comics uploaded on the same date.  While Comic Easel does not require each comic to have its own date, the Import does.  There will be other methods of importing made in the future that this will not be an issue.', 'comiceasel'); ?><br />
+    </p>
+    <br />
+    <?php
+    echo __('Directory to scan:', 'comiceasel').'&nbsp;<strong>'.ABSPATH.$import_directory.'</strong>'."<br />\r\n";
+    if (count($results = glob(ABSPATH.$import_directory.'/*.*')) > 0) {
+        echo count($results).' '.__('Files found.', 'comiceasel')."<br />\r\n";
+        echo "<hr />\r\n";
+        natcasesort($results);
+        foreach ($results as $filename) {
+            echo '<span style="width:320px;display:inline-block;float:left;">'.basename($filename).'</span>';
+        }
+    } else {
+    <<<<<<< HEAD
+    echo __('No files found in','comiceasel').'&nbsp;'.ABSPATH.$import_directory;
+    }
+    =======
+    echo __('No files found in', 'comiceasel').'&nbsp;'.ABSPATH.$import_directory;
+    }
+    >>>>>>> 6370396 (Refactor code for php linting)
+>>>>>>> 58d99ab (Refactor code for php linting)
