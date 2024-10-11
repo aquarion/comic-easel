@@ -70,7 +70,7 @@ td.comic-nav {
 }
 
 body.scheme-ceasel .comic-nav a:link, body.scheme-ceasel .comic-nav a:visited {
-	color: #000;
+    color: #000;
 }
 
 .comic-nav a:hover {
@@ -102,18 +102,18 @@ table#comic-nav-wrapper .comic-nav-jumptocomic select {
 }
 
 .mininav-wrapper {
-	font-size: 18px;
+    font-size: 18px;
     display: inline-block;
     float: right;
 }
 
 body.scheme-ceasel .mininav-wrapper {
-	font-size: 28px;
+    font-size: 28px;
 }
 
 .mininav-wrapper {
-	line-height: 25px;
-	height: 25px;
+    line-height: 25px;
+    height: 25px;
 }
 
 .mininav-prev a, .mininav-next a {

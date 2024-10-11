@@ -4,73 +4,73 @@ Style: Default
 */
 
 .comic_navi_wrapper {
-	display: table;
-	border-collapse: collapse;
-	text-align: center;
-	margin: 0 auto;
-	font-weight: bold;
-	font-size: 12px;
+    display: table;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 .comic_navi_left {
-	float: left;
+    float: left;
 }
 
 .comic_navi_right {
-	float: right;
+    float: right;
 }
 
 .comic_navi {
-	padding: 2px;
+    padding: 2px;
 }
 
 .navi-comictitle {
-	padding: 0px 6px;
-	text-align: center;
-	display: inline-block;
+    padding: 0px 6px;
+    text-align: center;
+    display: inline-block;
 }
 
 .navi {
-	padding: 0 6px;
-	display: inline-block;
+    padding: 0 6px;
+    display: inline-block;
 }
 
 .navi a {
-	display: block;
-	text-decoration: none;
+    display: block;
+    text-decoration: none;
 }
 
 .navi-first {
-	float: left;
+    float: left;
 }
 
 .navi-firstinchap {}
 
 .navi-prevchap, .navi-story_prev {
-	float: left;
+    float: left;
 }
 
 .navi-story_prev_in {
-	float: left;
+    float: left;
 }
 
 .navi-buycomic {
-	float: left;
+    float: left;
 }
 
 .navi-prev, .navi-previous {
 }
 
 .navi-comments, .navi-archive, .navi-random, .navi-buyprint {
-	display: inline-block;
+    display: inline-block;
 }
 
 .navi-comments-count {
-	padding-right: 4px;
+    padding-right: 4px;
 }
-	
+    
 .navi-next {
-	float: left;
+    float: left;
 }
 
 .navi-nextchap, .navi-story_next {
@@ -82,29 +82,29 @@ Style: Default
 .navi-lastinchap {}
 
 .navi-last {
-	float: right;
+    float: right;
 }
 
 .navi-void, .navi-void:hover {
-	font-weight: normal;
+    font-weight: normal;
 }
 
 #navi-share-box {
-	height: 96px;
-	width: 120px;
-	padding: 1px;
-	background: url('sharebox.png') 0 0 no-repeat;
-	display: none;
-	position: absolute;
-	margin: -180px auto;
-	zoom: 1;
+    height: 96px;
+    width: 120px;
+    padding: 1px;
+    background: url('sharebox.png') 0 0 no-repeat;
+    display: none;
+    position: absolute;
+    margin: -180px auto;
+    zoom: 1;
 }
 
 #navi-share-box a {
-	width: 24px;
-	height: 24px;
-	display: block;
-	float: left;
-	text-indent: -9999px;
-	overflow: hidden;
+    width: 24px;
+    height: 24px;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    overflow: hidden;
 }
