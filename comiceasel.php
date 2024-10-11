@@ -1,13 +1,14 @@
 <?php
 /*
-Plugin Name: Comic Easel
+Plugin Name: Comic Easel (S&P Edition)
 Plugin URI: http://comiceasel.com
 Description: Comic Easel allows you to incorporate a WebComic using the WordPress Media Library functionality with Navigation into almost all WordPress themes. With just a few modifications of adding injection do_action locations into a theme, you can have the theme of your choice display and manage a webcomic.
-Version: 1.15
-Author: Philip M. Hofer (Frumph)
+Version: 1.15.1
+Author: Philip M. Hofer (Frumph) & Nicholas Avenell (Aquarion)
 Author URI: http://frumph.net/
 
 Copyright 2012-2018 Philip M. Hofer (Frumph)  (email : philip@frumph.net)
+Copyright 2024- Nicholas Avenell (Aquarion)  (email : nicholas@aquarionics.com)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

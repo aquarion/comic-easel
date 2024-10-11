@@ -1,10 +1,10 @@
 === Comic Easel ===
 Author: Frumph
-Contributors: Frumph
+Contributors: Frumph & Aquarion
 Tags: comiceasel, easel, webcomic, comic, webcomic
 Requires at least: 4.8.2
 Tested up to: 5.0
-Stable tag: 1.15
+Stable tag: 1.15.1
 Text Domain: comiceasel
 Donate link: http://frumph.net
 License: GPLv3 or later
